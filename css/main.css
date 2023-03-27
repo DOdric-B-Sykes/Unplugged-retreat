@@ -1,0 +1,1253 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  background-color: #202322;
+  color: #e2e3ed;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/******* Base Header - Footer Styles ********/
+
+header, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+/******** Header Styles ********/
+
+header .content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+
+}
+
+.header-divider {
+  border-bottom: grey solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  width: 100%;
+
+}
+
+.header-divider a {
+  display: flex;
+  justify-content: center;
+
+}
+
+.header-divider a img {
+  width: 50%;
+
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  font-family: 'Open Sans, san-serif';
+  font-size: 1.125em;
+  font-weight: bold;
+  width: 30%;
+  
+}
+
+header nav ul li {
+  display: flex;
+
+}
+
+header nav ul li a {
+  color: #e2e3ed;
+  text-decoration: none;
+
+}
+
+/****** Mobile Styles **********/
+/***** Home Page *******/
+
+/** Main **/
+#hero-section {
+  background: url(../img/woman-forest.jpg) no-repeat;
+  background-position: center top;
+  background-size: cover;
+  padding-bottom: 300px;
+  height: 100%;
+  width: 100%;
+
+}
+
+.hero-area {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 20px 60px 20px;
+  width: 90%;
+
+}
+
+.hero-area h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+  letter-spacing: 1px;
+  margin: 0;
+
+}
+
+figure {
+  margin: 0;
+
+}
+
+aside {
+  background-color: #527158;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 15px 20px 50px 20px;
+
+}
+
+.form-description h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+
+}
+
+.form-description p {
+  font-family: 'Open Sans', sans-serif;
+  width: 70%;
+
+}
+
+.form {
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+.form h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+
+}
+
+.form input {
+  padding: 15px;
+  width: 100%;
+
+}
+
+#email-address {
+  color: grey;
+  margin-bottom: 10px;
+
+}
+
+#download-button {
+  background-color:#2a423a;
+  border: none;
+  color: white;
+  font-family: 'Poppins';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+}
+
+.features {
+  background: url(../img/campfire.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 40px 0 30px 0;
+  height: 100%;
+
+}
+
+.features-heading {
+  padding: 0 15px 30px 15px;
+
+}
+
+.features-heading h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+
+}
+
+.features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.features article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 55%;
+  padding: 30px 0;
+  text-align: center;
+
+}
+
+.features article p {
+  flex-basis:95%;
+
+}
+
+.fontawesome-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.fontawesome-icon i {
+  font-size: 3.75em;
+
+}
+
+.features-item-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875em;
+
+}
+
+.reviews {
+  background: #2a423a;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+
+}
+
+.reviews .content-wrapper {
+  margin: 50px 0;
+  padding: 0 20px;
+
+}
+
+.reviews h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  margin-bottom: 40px;
+  line-height: 1;
+
+}
+
+figure {
+  margin: 0;
+
+}
+
+img {
+  width: 100%;
+
+}
+
+.image-descrip h3 {
+  margin: 20px 0;
+  width: 55%;
+
+}
+
+.image-descrip p {
+  font-size: 1em;
+  line-height: 1.285;
+
+}
+
+
+
+
+/** Footer **/
+
+footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 70px 40px 70px;
+  margin: 50px 0;
+  width: 55%;
+
+}
+
+.footer-content {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.footer-contact h3 {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.contact {
+  text-align: center;
+  margin-bottom: 50px;
+  width: 100%;
+
+}
+
+.contact h3 {
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0;
+
+}
+
+.contact address a {
+  color: #e2e3ed;
+  text-decoration: none;
+
+}
+
+.contact address {
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+footer p {
+  margin: 0;
+
+}
+
+.social {
+  text-align: center;
+  width: 80%;
+
+}
+
+.social h3 {
+  padding-bottom: 20px;
+
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social p {
+  display: flex;
+
+}
+
+.social .social-icons a i {
+  color: white;
+  background: #527158;
+  border-radius: 50%;
+  font-size: 1.125em;
+  height: 35px;
+  padding-top: 15px;
+  width: 42px;
+
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.copyright p {
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+/****** About Page *******/
+.about-header-nav-ul {
+  width: 30%;
+
+}
+
+.mission {
+  background-color: #527158;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 50px 20px 40px 20px;
+
+}
+
+.mission-descrip h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+
+}
+
+.mission-content p {
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.map figure {
+  height: 0;
+  position: relative;
+  padding-bottom: 125%;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+.map iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+}
+
+.contact-section {
+  background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 40px 20px;
+
+}
+
+.contact-wrapper, .contact-content {
+  width: 100%;
+
+}
+
+.contact-section .contact-wrapper h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+
+}
+
+.contact-content h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+
+}
+
+.contact-content address {
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+/****** FAQ Page ********/
+.faq-header-nav-ul {
+  width: 30%
+
+}
+
+.faq-heading h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+
+}
+
+.faq-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+.faq-content-wrapper {
+  background-color: #527158;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  padding: 40px 20px;
+
+}
+
+.faq-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+.faq-content, .faq-content-wrapper, .faq-heading, .faq-section {
+  flex-basis: 100%;
+
+}
+
+.faq-entries h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  text-decoration: underline;
+
+}
+
+.faq-entries p {
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
+  /**** Header/Footer Base Styles *****/
+
+header .content-wrapper {
+  flex-flow: row nowrap;
+  width: 100%;
+  padding: 20px 60px;
+
+}
+
+.header-divider {
+  border: none;
+
+}
+
+.header-divider a {
+  justify-content: flex-start;
+
+}
+
+header nav {
+  justify-content: flex-end;
+
+}
+
+header nav ul {
+  width: 30%;
+
+}
+
+.footer-content .contact h3 {
+  font-size: 1.5em;
+
+}
+
+footer .content-wrapper {
+  width: 100%;
+
+}
+
+.footer-content {
+  flex-flow: row nowrap;
+  width: 100%;
+
+}
+
+.contact {
+  margin: 0;
+  flex-basis: 50%;
+
+}
+
+.social {
+  flex-basis: 50%;
+
+}
+
+.social h3 {
+  margin: 0;
+
+}
+
+.social-icons {
+  justify-content: space-evenly;
+
+}
+
+/****** Home Page ******/
+
+.hero-area {
+  padding: 80px 20px 60px 20px;
+
+}
+
+.hero-area h2 {
+  font-size: 3em;
+  letter-spacing: 1px;
+  width: 90%;
+
+}
+
+aside {
+  flex-flow: row nowrap;
+  padding: 20px 60px 20px 60px;
+  justify-content: space-between;
+
+}
+
+.form-description h2 {
+  letter-spacing: 1px;
+
+}
+
+.form-description p {
+  width: 108%;
+
+}
+
+.form-description, .form {
+  flex-basis: 41%;
+
+}
+
+.features {
+  padding: 0 0 50px 0;
+
+}
+
+.features-heading {
+  padding: 80px 60px 0 60px;
+
+}
+
+.features-heading h1 {
+  font-size: 2.25em;
+  letter-spacing: 1px;
+  width: 100%;
+
+}
+
+.features-items {
+  justify-content: space-evenly;
+
+}
+
+.features-items article {
+  flex-basis: 40%;
+  margin-bottom: 30px;
+  flex-flow: row wrap;
+
+}
+
+.features article p {
+  flex-basis: 64%;
+
+}
+
+.reviews .content-wrapper {
+  margin: 95px 0;
+  padding: 0 60px;
+
+}
+
+.reviews .content-wrapper h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+  width: 85%;
+
+}
+
+article {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+article .image, article .image-descrip {
+  flex-basis: 49%;
+
+}
+
+article .image-descrip h3 {
+  font-size: 1.5em;
+  margin: 0;
+  width: 75%;
+
+}
+
+
+/**** About Page ****/
+
+.mission {
+  padding: 50px 60px 40px 60px;
+
+}
+
+.mission-descrip h2 {
+  font-size: 2.14em;
+
+}
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#mission-para-1, #mission-para-2 {
+  flex-basis: 47%;
+
+}
+
+.map figure {
+  padding-bottom: 45%;
+
+}
+
+.contact-section {
+  padding: 80px 60px;
+  justify-content: flex-start;
+
+}
+
+.contact-wrapper {
+width: 85%;
+
+}
+
+.contact-section .contact-wrapper h2 {
+  font-size: 2.25em;
+  width: 95%;
+
+}
+
+.contact-section .contact-wrapper h2 {
+  width: 100%;
+
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row nowrap;
+  width: 100%;
+
+}
+
+.contact-content h3 {
+  font-size: 1.5em;
+
+}
+
+.General-info, .Facilitator-contact {
+  flex-basis: 42%;
+
+}
+
+/****** FAQ Page *****/
+
+.faq-content-wrapper {
+  padding: 80px 65px;
+
+}
+
+.faq-heading {
+  padding: 0;
+
+}
+
+.faq-heading h2 {
+  font-size: 2.25em;
+
+}
+
+.faq-section {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+
+}
+
+.faq-entries {
+  flex-basis: 46%;
+
+}
+
+.faq-entries p, .faq-entries h3 {
+  font-size: .875em;
+
+}
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
+  /***** Header/Footer Base Styles ****/
+.footer-content {
+  font-size: 1.875em;
+  justify-content: space-around;
+
+}
+
+footer .content-wrapper {
+  padding: 40px 0 40px 0;
+
+}
+
+footer .social .social-icons a i {
+  font-size: .875em;
+
+}
+
+  /***** Homepage *****/
+#hero-section {
+  background-position: center;
+  background-size: cover;
+
+}
+
+.hero-area {
+  padding: 40px 120px 60px 120px;
+  justify-content: flex-start;
+  width: fit-content;
+
+}
+
+
+.hero-area h2 {
+  font-size: 3.75em;
+  letter-spacing: 3px;
+  padding-bottom: 70px;
+  padding-top: 0;
+  width: 75%;
+
+}
+
+aside {
+  padding: 40px 120px;
+  justify-content: space-around;
+
+}
+
+.form-description {
+  margin-left: 80px;
+
+}
+
+.form {
+  margin-right: 80px;
+
+}
+
+.form, .form-description {
+  flex-basis: 24%;
+
+}
+
+
+.features-heading {
+  letter-spacing: 2px;
+  text-align: left;
+  padding: 90px 120px 0 120px;
+  width: 77%;
+
+}
+
+.features-heading h1 {
+  width: 100%;
+
+}
+
+.features-items {
+  padding: 0 60px;
+
+}
+
+.features-items article {
+  flex-basis: 27%;
+
+}
+
+.features article p {
+  flex-basis: 51%;
+
+}
+
+.reviews .content-wrapper {
+  padding: 85px 120px;
+
+}
+
+.reviews .content-wrapper h1 {
+  padding-bottom: 80px;
+  width: 75%;
+
+}
+
+article .image-descrip h3 {
+  font-size: 1.875em;
+
+}
+
+article .image-descrip p {
+  font-size: 1.125em;
+  line-height: 25px;
+  width: 80%;
+
+}
+
+.contact, .social {
+  flex-basis: 25%;
+
+}
+
+
+/****** About Page *******/
+
+.mission {
+padding: 0;
+
+}
+
+.mission .content-wrapper {
+  padding: 50px 120px 40px 120px;
+
+}
+
+.mission-descrip h2 {
+  font-size: 2.7em;
+  margin-bottom: 0;
+
+}
+
+.mission-content {
+  justify-content: space-between;
+
+}
+
+#mission-para-1, #mission-para-2 {
+  flex-basis: 46%;
+  line-height: 25px;
+
+}
+
+.map figure {
+  padding-bottom: 38%;
+
+}
+
+.contact-section {
+  padding: 0;
+
+}
+
+.contact-section .contact-wrapper {
+  padding: 85px 120px;
+
+}
+
+.contact-section .contact-wrapper h2 {
+  font-size: 2.7em;
+
+}
+
+.contact-content {
+  justify-content: space-between;
+
+}
+
+.contact-content h3 {
+  font-size: 1.875em;
+
+}
+
+.General-info, .Facilitator-contact {
+  flex-basis: 50%;
+
+}
+
+/***** FAQ Page ******/
+
+.faq-content-wrapper {
+  padding: 80px 120px;
+
+}
+
+.faq-heading h2 {
+  font-size: 3em;
+
+}
+
+.faq-entries {
+  flex-basis: 46%;
+
+}
+
+.faq-entries p, .faq-entries h3 {
+  font-size: 1.125em;
+
+}
+
+
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
